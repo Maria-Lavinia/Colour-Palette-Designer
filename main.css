@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: pink;
+}
+h1 {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+#colorSelector {
+  padding: 20px 0;
+  background-color: white;
+  margin: 2vw 10vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.4fr;
+  grid-template-areas:
+    "harmonies harmonies picker . ."
+    "boxesAll boxesAll boxesAll boxesAll boxesAll"
+    "info info info info info";
+}
+
+.colorboxes {
+  grid-area: boxesAll;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+}
+.harmonies {
+  grid-area: harmonies;
+  margin: auto 0;
+  padding-left: 1em;
+}
+.input {
+  grid-area: picker;
+  margin: 0 auto;
+  justify-self: center;
+}
+#colorSelector > div.input > p {
+  display: inline-block;
+}
+input {
+  display: inline-block;
+}
+
+#infoBox {
+  margin: auto 0;
+  grid-area: info;
+  text-align: center;
+  display: grid;
+}
+#infoBox2 {
+  margin-right: 90px;
+  grid-area: info;
+  /* text-align: center; */
+  display: grid;
+}
+#infoBox3 {
+  margin: auto 0;
+  grid-area: info;
+  text-align: center;
+  display: grid;
+}
+#infoBox4 {
+  margin: auto 0;
+  grid-area: info;
+  text-align: center;
+  display: grid;
+}
+#infoBox5 {
+  margin: auto 0;
+  grid-area: info;
+  text-align: center;
+  display: grid;
+}
+
+.box {
+  background-color: white;
+  padding-top: 100%;
+}
+#colorBoxMain {
+  background-color: none;
+  border: solid pink 2px;
+}
+@media (max-width: 400px) {
+  #colorSelector {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "picker"
+      "harmonies"
+      "boxesAll"
+      "info";
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .harmonies {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  .input {
+    padding: 10px 0;
+  }
+  #colorBoxMain {
+    background-color: pink;
+    border: solid pink 2px;
+  }
+  #infobox {
+    padding: 10px;
+  }
+  #infobox2 {
+    padding: 10px;
+  }
+  #infobox3 {
+    padding: 10px;
+  }
+  #infobox4 {
+    padding: 10px;
+  }
+  #infobox5 {
+    padding: 10px;
+  }
+}

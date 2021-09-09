@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour Palette Designer</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Colour Palette Designer</h1>
+    <div id="colorSelector">
+      <div class="input">
+        <label>Select Colour:
+          <input type="color" />
+      </div>
+      </label>
+      <div class="harmonies">
+        <label>Harmony:
+          <select class="harmonyPicker">
+            <option value="None">None</option>
+            <option value="Analogous">Analogous</option>
+            <option value="Monochromatic">Monochromatic</option>
+            <option value="Triad">Triad</option>
+            <option value="Complementary">Complementary</option>
+            <option value="Compound">Compound</option>
+            <option value="Shades">Shades</option>
+          </select>
+        </label>
+      </div>
+      <div class="colorboxes">
+        <div class="box" id="colorBox1"></div>
+        <div class="box" id="colorBox2"></div>
+        <div class="box" id="colorBoxMain"></div>
+        <div class="box" id="colorBox3"></div>
+        <div class="box" id="colorBox4"></div>
+      </div>
+      <div id="infoBox">
+        <p id="hex"></p>
+        <p id="rgb"></p>
+        <p id="hsl"></p>
+      </div>
+      <div id="infoBox2">
+        <p id="hex2"></p>
+        <p id="rgb2"></p>
+        <p id="hsl2"></p>
+      </div>
+      <div id="infoBox3">
+        <p id="hex3"></p>
+        <p id="rgb3"></p>
+        <p id="hsl3"></p>
+      </div>
+      <div id="infoBox4">
+        <p id="hex4"></p>
+        <p id="rgb4"></p>
+        <p id="hsl4"></p>
+      </div>
+      <div id="infoBox5">
+        <p id="hex5"></p>
+        <p id="rgb5"></p>
+        <p id="hsl5"></p>
+      </div>
+    </div>
+  
+    <script src="color.js"></script>
+  </body>
+  
+  </html>
+
+  
